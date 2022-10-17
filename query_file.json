@@ -1,0 +1,79 @@
+{
+    "insert_queries" : [
+        {
+            "table": "users_statistics",
+            "name": "Riyad",
+            "username": "riyad_75",
+            "phone": "01748837247"
+        },
+        {
+            "table": "users_statistics",
+            "name": "Rahat",
+            "username": "rahat_690",
+            "phone": "01234567891"
+        },
+        {
+            "table": "users_statistics",
+            "name": "Nibir",
+            "username": "nibir_12",
+            "phone": "234569"
+        }
+         
+    ],
+    "select_query" : {
+        "table": "users_statistics",
+        "all": false,
+        "columns":
+        [
+            "name",
+            "username",
+            "phone"
+        ],
+        "where": [
+            {
+                "column": "username",
+                "operator": "=",
+                "value": "rahat_690"
+            }
+        ]
+    },
+    "update_query" : {
+        "table": "users_statistics",
+        "set": 
+        [
+            {
+                "column": "phone",
+                "value": "01690"
+            }
+        ],
+        "where": [
+            {
+                "column": "username",
+                "operator": "=",
+                "value": "riyad_75"
+            }
+        ]
+    },
+    "delete_entry" : {
+        "table": "users_statistics",
+        "where": [
+            {
+                "column": "username",
+                "operator": "=",
+                "value": "rahat_690"
+            }
+        ]
+    },
+    "config": {
+        "sqlite": {
+            "filename": "sqlite.db"
+        }, 
+        "mysql": {
+            "host": "localhost",
+            "user": "root",
+            "password": "riyad",
+            "db": "sample_db"
+        },
+        "databaseToUse" : "sqlite" 
+    }
+}
